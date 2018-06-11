@@ -15,7 +15,7 @@ the context of twitter retweet prediction. An arXiv.org version is available
 
 The git repository can be cloned by simply using:
 
-    git clone <TODO>
+    git clone https://github.com/NII-Kobayashi/TiDeH.git
 
 Once the repository is cloned, the folder should contain two different
 subfolders and this README file.
