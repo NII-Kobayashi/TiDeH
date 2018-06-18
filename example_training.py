@@ -45,6 +45,6 @@ start_values = [0.2, 0, 0.25]
 (mean_err, median_err, param), _ = training_cross_validation(events_data, iterations, start_values, simplex,
                                                              pred_time=pred_time)
 
-print("Final mean training error: %f" % mean_err)
-print("Final median training error: %f" % median_err)
+print("Final mean training error: %0.3f" % mean_err)
+print("Final median training error: %0.3f" % median_err)
 print("Final infectious rate parameters: " + str(param))

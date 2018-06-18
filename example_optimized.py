@@ -47,11 +47,11 @@ params, err, _ = estimate_parameters_optimized(event_times=event_times, follower
                                                **add_params)
 
 print("Estimated parameters are:")
-print("p0:   %.10f" % params[0])
-print("r0:   %.10f" % params[1])
-print("phi0: %.10f" % params[2])
-print("tm:   %.10f" % params[3])
-print("Average %% error (estimated to fitted): %.3f" % (err * 100))
+print("p0:   %.3f" % params[0])
+print("r0:   %.3f" % params[1])
+print("phi0: %.3f" % params[2])
+print("tm:   %.3f" % params[3])
+print("Average %% error (estimated to fitted): %.2f" % (err * 100))
 
 # predict future retweets
 _, total, pred_error = predict_optimized(event_times=event_times, follower=follower, obs_time=obs_time,
@@ -59,4 +59,4 @@ _, total, pred_error = predict_optimized(event_times=event_times, follower=follo
 
 print("Predicted number of retwests from %s to %s hours: %i" % (obs_time, pred_time, total))
 print("Predicted number of retweets at hour %s: %i" % (pred_time, event_times[event_times <= obs_time].size + total))
-print("Prediction error (absolute): %f" % pred_error)
+print("Prediction error (absolute): %.0f" % pred_error)
