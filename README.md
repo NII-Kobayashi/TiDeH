@@ -100,4 +100,4 @@ following format:
 
 This project is licensed under the terms of the MIT license.
 
-Please contact Ryota Kobayashi if you want to use the code for commercial purposes.
+Please contact [Ryota Kobayashi](http://www.hk.k.u-tokyo.ac.jp/r-koba/en/contact.html) if you want to use the code for commercial purposes.
